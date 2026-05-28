@@ -15,6 +15,11 @@ body {
   justify-content: center;
   align-items: center;
   color: white;
+
+  opacity: 0;
+  transition: opacity 0.4s ease;
+
+  overflox-x: hidden;
 }
 
 /* Main Container */
@@ -154,4 +159,62 @@ p {
 .contact {
   border: red;
   background: white;
+}
+
+/* SPLASH Text */
+.splash text{
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  font-size: 22px;
+  font-weight: bold;
+
+  color: #ffe66d;
+
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.35);
+  transform: rotate(-8deg);
+  animation: splashBounce 2s ease-in-out infinite;
+}
+
+/* SPLASH Animation */
+@keyframes splashBounce {
+  0% {
+    transform: rotate(-8deg) scale(-1);
+  }
+
+  50% {
+    transform: rotate(-8deg) scale(1.08);
+  }
+
+  100% {
+    transform: rotate(-8deg) scale(1);
+  }
+}
+
+/* CONTACT Section */
+.contact-section {
+  margin-top: 50px;
+
+  padding-top: 25px;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.contact-section h2{
+  margin-bottom: 15px;
+}
+
+.contact-section p{
+  margin: 8px 0;
+  font-size: 15px;
+  opacity: 0.95;
+}
+
+/* Page Transitions */
+body.fade-in {
+  opacity: 1;
+}
+
+body.fade-out{
+  opacity: 0;
 }
