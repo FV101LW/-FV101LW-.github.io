@@ -162,7 +162,7 @@ p {
 }
 
 /* SPLASH Text */
-.splash text{
+.splash-text{
   display: inline-block;
   margin-top: 10px;
   margin-bottom: 10px;
