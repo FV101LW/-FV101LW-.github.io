@@ -180,7 +180,7 @@ p {
 /* SPLASH Animation */
 @keyframes splashBounce {
   0% {
-    transform: rotate(-8deg) scale(-1);
+    transform: rotate(-8deg) scale(1);
   }
 
   50% {
