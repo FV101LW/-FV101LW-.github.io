@@ -1,7 +1,87 @@
+/* General Page Styling */
+
 body {
-  background-color: #87CEFA;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(
+    #87CEFA,
+    #5dade2,
+    #2e86c1
+  );
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
 
+/* Main Container */
+
+.container {
+  width: 80%;
+  max-width: 700px;
+  padding: 40px;
+
+  text-align: center;
+
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+
+  backdrop-filter: blur(10px);
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Profile Image */
+.profile-image {
+  border-radius: 15px;
+
+  border: 3px solid-white;
+
+  object-fit: cover;
+
+  margin-bottom: 15px;
+
+  transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+  transform: scale(1.05);
+}
+
+/* Heading */
+
 h1 {
-  
+  margin-top: 10px;
+  font-size: 36px;
+  letter-spacing: 1px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: #d6f3ff;
+}
+
+/* Paragraph */
+
+p {
+  line-height: 1.7;
+
+  font-size: 16px;
+}
+
+/* Info Card */
+.info-card {
+  margin-top: 30px;
+
+  padding: 20px;
+  border-radius: 15px;
+
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* My Contact */
+.contact {
 }
