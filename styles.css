@@ -220,3 +220,21 @@ body.fade-in {
 body.fade-out{
   opacity: 0;
 }
+
+/* Resume Link */
+
+.resume-link {
+  color: #ffe66d;
+
+  text-decoration: none;
+
+  font-weight: bold;
+
+  transition: 0.3s ease;
+}
+
+.resume-link:hover {
+  color: white;
+
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
