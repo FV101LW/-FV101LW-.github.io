@@ -4,9 +4,10 @@ body {
   margin: 0;
   padding: 0;
   background: linear-gradient(
-    #87CEFA,
-    #5dade2,
-    #2e86c1
+    135deg,
+    #f8fbfd,
+    #eaf4f7,
+    #dceef5
   );
   font-family: Arial, Helvetica, sans-serif;
   min-height: 100vh;
@@ -14,7 +15,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: 2c3e50;
 
   opacity: 0;
   transition: opacity 0.4s ease;
@@ -31,12 +32,13 @@ body {
 
   text-align: center;
 
-  background: rgba(255, 255, 255, 0.12);
-  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
 
   backdrop-filter: blur(10px);
 
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
 }
 
 /* Profile Image */
@@ -66,7 +68,8 @@ h1 {
 
 h2 {
   margin-bottom: 10px;
-  color: #d6f3ff;
+  /* color: #d6f3ff; */
+  color: #2874a6;
 }
 
 /* Paragraph */
@@ -173,7 +176,7 @@ p {
 
   color: #ffeb3b;
 
-  text-shadow: 0 0 5px rgba(255, 235, 59, 0.8),
+  text-shadow: 0 0 6px rgba(255, 183, 3, 0.4),
     2px 2px 4px rgba(0, 0, 0, 0.4);
   transform: rotate(-8deg);
   animation: splashBounce 2s ease-in-out infinite;
