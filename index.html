@@ -71,8 +71,63 @@
   </div>
 
   <script>
+    const splashTexts = [
+    "No more Ocean Vibes.",
+    "Powered by caffeine.",
+    "Still debugging!",
+    "Probably writing Java.",
+    "RISC-V approved!",
+    "Goodbye, World!",
+    "Built by Wei-lord.",
+    "May contain traces of bugs.",
+    "Ctrl + S frequently.",
+    "Built with HTML and anger.",
+    "Please don't check the commit history.",
+    "AI-assisted, human-supervised.",
+    "Still trying to center a div.",
+    "Inspired by MeinKraft!",
+    "Loading mediocre projects...",
+    "Sleep is optional.",
+    "Currently not on fire.",
+    "Game developer in progress.",
+    "Compiling dreams...",
+    "Touching grass occasionally.",
+    "Ocean lover detected."
+];
+    
     document.addEventListener("DOMContentLoaded", ()=> {
       document.body.classList.add("fade-in");
+      /* Random splash text */
+      const splash = document.getElementById("splash-text");
+
+if (splash) {
+
+    let previous = localStorage.getItem("previousSplash");
+
+    let randomIndex;
+
+    do {
+        randomIndex = Math.floor(Math.random() * splashTexts.length);
+    } while (
+        splashTexts.length > 1 &&
+        splashTexts[randomIndex] === previous
+    );
+
+    splash.textContent = splashTexts[randomIndex];
+
+    localStorage.setItem(
+        "previousSplash",
+        splashTexts[randomIndex]
+    );
+}
+/* Intro screen */
+      setTimeout(() => {
+
+        document
+               .getElementById("intro-screen")
+               .classList
+               .add("hidden");
+      }, 2500);
     });
 
     document.querySelectorAll("a").forEach(link => {
